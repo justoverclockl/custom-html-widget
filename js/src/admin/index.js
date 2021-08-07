@@ -13,9 +13,11 @@ import app from 'flarum/admin/app';
 
 app.initializers.add('justoverclock/custom-html-widget', () => {
     registerWidget(app);
-    app.extensionData.for('justoverclock-custom-html-widget').registerSetting(function () {
-      const warningMessage = app.translator.trans('justoverclock-custom-html-widget.admin.warningmessage');
-      const warnintTitle = app.translator.trans('justoverclock-custom-html-widget.admin.warningtext');
+    app.extensionData
+      .for('justoverclock-custom-html-widget')
+      .registerSetting(function () {
+        const warningMessage = app.translator.trans('justoverclock-custom-html-widget.admin.warningmessage');
+        const warnintTitle = app.translator.trans('justoverclock-custom-html-widget.admin.warningtext');
         return (
             <div className="Form-group settingscustomhtml">
                 <label>{warnintTitle}</label>
