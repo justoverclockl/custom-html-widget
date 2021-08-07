@@ -14,13 +14,12 @@ import app from 'flarum/admin/app';
 app.initializers.add('justoverclock/custom-html-widget', () => {
     registerWidget(app);
     app.extensionData.for('justoverclock-custom-html-widget').registerSetting(function () {
+      const warningMessage = app.translator.trans('justoverclock-custom-html-widget.admin.warningmessage');
+      const warnintTitle = app.translator.trans('justoverclock-custom-html-widget.admin.warningtext');
         return (
             <div className="Form-group settingscustomhtml">
-                <label>Custom Html Code</label>
-                <aside class="customhtmlwarning">
-                    Injecting unknown HTML creates a potential security risk for your website. Write your own html or choose a secure code from
-                    trusted website. Remember also tu use correct width (to fit the widget sidebar).
-                </aside>
+                <label>{warnintTitle}</label>
+                <aside class="customhtmlwarning">{warningMessage}</aside>
                 <textarea className="FormControl customhtmlbox" bidi={this.setting('justoverclock-custom-html-widget.customCode')}></textarea>
             </div>
         );
