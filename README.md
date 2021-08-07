@@ -19,12 +19,11 @@ composer require justoverclock/custom-html-widget:"*"
 
 ```sh
 composer update justoverclock/custom-html-widget:"*"
-php flarum migrate
 php flarum cache:clear
 ```
 
 ## Links
 
 - [Packagist](https://packagist.org/packages/justoverclock/custom-html-widget)
-- [GitHub](https://github.com/justoverclock/custom-html-widget)
-- [Discuss](https://discuss.flarum.org/d/PUT_DISCUSS_SLUG_HERE)
+- [GitHub](https://github.com/justoverclockl/custom-html-widget)
+
