@@ -4,6 +4,9 @@
 
 A [Flarum](http://flarum.org) extension. Add your custom html to Flarum
 
+![jpSEKeQJuu](https://user-images.githubusercontent.com/79002016/128605479-d7e4ae0e-a8c3-44cd-8586-cf684aedb900.gif)
+
+
 ## Installation
 
 Install with composer:
