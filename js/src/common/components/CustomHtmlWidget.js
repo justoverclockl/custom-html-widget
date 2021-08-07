@@ -7,33 +7,24 @@
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
-
+import app from 'flarum/forum/app';
 import Widget from 'flarum/extensions/afrux-forum-widgets-core/common/components/Widget';
 
 export default class LastTweetWidget extends Widget {
-  oncreate(vnode) {
+    oncreate(vnode) {
+        document.getElementById('wghtml').innerHTML = app.forum.attribute('justoverclock-custom-html-widget.customCode');
+    }
 
-  }
+    className() {
+        return 'custom-html-widget';
+    }
 
-  className() {
-    return 'custom-html-widget';
-  }
+    icon() {
+        // Widget icon.
+        return 'far fa-file-code';
+    }
 
-  icon() {
-    // Widget icon.
-    return 'far fa-file-code';
-  }
-
-/*  title() {
-    // Widget title.
-    return app.translator.trans('justoverclock-custom-html-widget.forum.widget-title');
-  }*/
-
-  content() {
-    const customCode = app.forum.attribute('justoverclock-custom-html-widget.customCode');
-    const rawCode = document.getElementById('wghtml').innerHTML(customCode);
-    return (
-      <div class="htmlwidget" id="wghtml">{rawCode}</div>
-    );
-  }
+    content() {
+        return <div class="htmlwidget" id="wghtml"></div>;
+    }
 }
