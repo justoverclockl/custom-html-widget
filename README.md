@@ -1,6 +1,6 @@
 # Custom Html Widget
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/justoverclock/custom-html-widget.svg)](https://packagist.org/packages/justoverclock/custom-html-widget) [![Total Downloads](https://img.shields.io/packagist/dt/justoverclock/custom-html-widget.svg)](https://packagist.org/packages/justoverclock/custom-html-widget)
+![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://poser.pugx.org/justoverclock/custom-html-widget/v)](https://packagist.org/packages/justoverclock/custom-html-widget) [![Total Downloads](http://poser.pugx.org/justoverclock/custom-html-widget/downloads)](https://packagist.org/packages/justoverclock/custom-html-widget)
 
 A [Flarum](http://flarum.org) extension. Add your custom html to Flarum
 
