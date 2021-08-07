@@ -1,3 +1,6 @@
+import app from 'flarum/forum/app';
+import registerWidget from '../common/registerWidget';
+
 app.initializers.add('justoverclock/custom-html-widget', () => {
-  console.log('[justoverclock/custom-html-widget] Hello, forum!');
+  registerWidget(app);
 });
