@@ -2,7 +2,9 @@
     "name": "justoverclock/custom-html-widget",
     "description": "Add your custom html to Flarum",
     "keywords": [
-        "flarum"
+        "widget",
+        "afrux",
+        "custom html"
     ],
     "type": "flarum-extension",
     "license": "MIT",
