@@ -1,5 +1,5 @@
 /*
- * This file is part of justoverclock/last-tweet.
+ * This file is part of justoverclock/custom-html-widget.
  *
  * Copyright (c) 2021 Marco Colia.
  * https://flarum.it
